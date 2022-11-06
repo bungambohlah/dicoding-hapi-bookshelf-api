@@ -1,65 +1,59 @@
-# REST API With Hapi.js, Typescript, Prisma ORM and Postgresql
+# Submission Bookshelf API
 
-## Description
+Project ini adalah Submission dari materi [Belajar Membuat Aplikasi Back-End untuk Pemula dengan Cloudeka](https://www.dicoding.com/academies/510).
 
-There are not many working examples out there on how to use one of the alternatives to express js called 'Hapi Js' with typescript, and do an effective setup for complex projects.
+Menggunakan Hapi sebagai standard atau framework backend service untuk menyediakan layanan Rest API.
 
-This example is a church office management REST api built with Hapi js, Typescript , Prisma ORM and Postgresql. It is an example of how to structure a hapi js REST Api project into models, routes, controllers and services for effective separation of concerns and unit testing.
+## Table of Contents
 
-Unlike its unfortunately or fortunately more popular rival - express js, Hapi provides many tools out of the box. Enabling you to do session management, security, connectivity, and testing without installing many extra packages or middlewares. And yet these built in tools are extensible.
+- [Submission Bookshelf API](#submission-bookshelf-api)
+  - [Table of Contents](#table-of-contents)
+  - [Kriteria](#kriteria)
+  - [Pengujian](#pengujian)
+    - [Contoh Pengujian Berhasil](#contoh-pengujian-berhasil)
+  - [About Me](#about-me)
+  - [LICENSE](#license)
 
-Prisma ORM is a typescript ORM that helps with database migration, etc.
+## Kriteria
 
-## Documentation link for reference and demo
+- API dapat menyimpan buku
+- API dapat menampilkan seluruh buku
+- API dapat menampilkan detail buku
+- API dapat mengubah data buku
+- API dapat menghapus buku
 
-[LINK TO DEMO AND DOCUMENTATION](https://church-management-api.herokuapp.com/documentation)
+## Pengujian
 
-## SIDE NOTE
+- Import kedua berkas postman yang disediakan oleh pihak dicoding pada [Postman Collection](https://raw.githubusercontent.com/bungambohlah/dicoding-bookshelf-api/master/postman/Bookshelf%20API%20Test.postman_collection.json) dan [Postman Environment](https://raw.githubusercontent.com/bungambohlah/dicoding-bookshelf-api/master/postman/Bookshelf%20API%20Test.postman_environment.json)
+- Sesuaikan environment sesuai preferensi developer
+- Jalankan pengetesan dengan melakukan "Run Collection" yang telah diimport
 
-Jest module mock seem not to be working AS EXPECTED when using hapi js built in inject method for http tests. Though it uses the mock implementation provided, it still validates inputs against dependencies in the mocked classes / services / functions. Alternative is to use chaihttp as used in the e2e tests till I figure out how to mock dependencies with Hapi inject without such behaviour. Though that behaviour is an advantage in some other scenarios, but not for what I needed in the tests written.
+![alt text](https://raw.githubusercontent.com/bungambohlah/dicoding-bookshelf-api/master/screenshots/run_collection.png)
 
-## TODO
+- Select all and Click "Run the test" button
 
-Handle all errors instead of simply logging to the console. For now, you will see the logs when you run the tests.
+![alt text](https://raw.githubusercontent.com/bungambohlah/dicoding-bookshelf-api/master/screenshots/run_test.png)
 
-## Installation
+- Wait until all request is finished
 
-```bash
-$ npm install
-```
+### Contoh Pengujian Berhasil
 
-## Run Database Migration with Prisma ORM
+All passed and no any failed tests
 
-Before this, make sure you set up a postgresql database on your machine and create environment variable named 'DATABASE_URL' with the connection url. Then the following command will automatically create the relevant tables in the database
+![alt text](https://raw.githubusercontent.com/bungambohlah/dicoding-bookshelf-api/master/screenshots/success_test.png)
 
-```bash
-$ npm run migrate-db
-```
+## About Me
 
-## Build the app to compile typscript
+Hello there 👋🏻, my name is [Afif Abdillah Jusuf](https://github.com/bungambohlah) and I'm a software engineer.
 
-This will also create the prisma client required for performing database operations in the app
+I'm currently working as a [Full Stack Developer](https://linkedin.com/lin/afifjusut).
 
-```bash
-$ npm run build
-```
+Graduated from [Politeknik Elektronika Negeri Surabaya](https://pens.ac.id) as Associate Degree in Informatics Engineering.
 
-## Start application / server
+Nice to meet you.
 
-```bash
-$ npm run start
-```
+Visit my personal site at [afif.dev](https://afif.dev).
 
-## Start development server with auto reload
+## LICENSE
 
-```bash
-$ npm run dev
-```
-
-## Run automated tests
-
-Note that by design, the first time you run the tests, a couple of the tests will fail because the database will only be populated on this first run. But on subsequent run, all tests will pass.
-
-```bash
-$ npm run test
-```
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
