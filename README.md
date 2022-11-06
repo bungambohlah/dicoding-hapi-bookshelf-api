@@ -24,15 +24,15 @@ Menggunakan Hapi sebagai standard atau framework backend service untuk menyediak
 
 ## Pengujian
 
-- Import kedua berkas postman yang disediakan oleh pihak dicoding pada [Postman Collection](https://raw.githubusercontent.com/bungambohlah/dicoding-bookshelf-api/master/postman/Bookshelf%20API%20Test.postman_collection.json) dan [Postman Environment](https://raw.githubusercontent.com/bungambohlah/dicoding-bookshelf-api/master/postman/Bookshelf%20API%20Test.postman_environment.json)
+- Import kedua berkas postman yang disediakan oleh pihak dicoding pada [Postman Collection](https://raw.githubusercontent.com/bungambohlah/dicoding-hapi-bookshelf-api/master/postman/Bookshelf%20API%20Test.postman_collection.json) dan [Postman Environment](https://raw.githubusercontent.com/bungambohlah/dicoding-hapi-bookshelf-api/master/postman/Bookshelf%20API%20Test.postman_environment.json)
 - Sesuaikan environment sesuai preferensi developer
 - Jalankan pengetesan dengan melakukan "Run Collection" yang telah diimport
 
-![alt text](https://raw.githubusercontent.com/bungambohlah/dicoding-bookshelf-api/master/screenshots/run_collection.png)
+![alt text](https://raw.githubusercontent.com/bungambohlah/dicoding-hapi-bookshelf-api/master/screenshots/run_collection.png)
 
 - Select all and Click "Run the test" button
 
-![alt text](https://raw.githubusercontent.com/bungambohlah/dicoding-bookshelf-api/master/screenshots/run_test.png)
+![alt text](https://raw.githubusercontent.com/bungambohlah/dicoding-hapi-bookshelf-api/master/screenshots/run_test.png)
 
 - Wait until all request is finished
 
@@ -40,7 +40,7 @@ Menggunakan Hapi sebagai standard atau framework backend service untuk menyediak
 
 All passed and no any failed tests
 
-![alt text](https://raw.githubusercontent.com/bungambohlah/dicoding-bookshelf-api/master/screenshots/success_test.png)
+![alt text](https://raw.githubusercontent.com/bungambohlah/dicoding-hapi-bookshelf-api/master/screenshots/success_test.png)
 
 ## About Me
 
