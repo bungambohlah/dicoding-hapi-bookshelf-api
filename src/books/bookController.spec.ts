@@ -1,8 +1,6 @@
 import * as Hapi from '@hapi/hapi';
 import appInstance from '../app';
-import { mocked } from 'ts-jest/utils';
 import { Book } from './book';
-import { BookService } from './bookService';
 import { nanoid } from 'nanoid';
 
 describe('tests for Book controller', () => {
