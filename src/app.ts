@@ -13,7 +13,7 @@ class App {
   public async init() {
     // set up server
     this.theApp = Hapi.server({
-      port: process.env.PORT || 3000,
+      port: process.env.PORT || 9000,
       host: process.env.HOST || '0.0.0.0',
     });
 
@@ -24,7 +24,7 @@ class App {
         title: 'Church Office Management REST API Documentation',
         version: '1.0.0',
         description:
-          "Example Project of 'Hapi Js' with typescript and much features. This is a example books REST api built with Hapi js, Typescript , Prisma ORM and Postgresql. It is an example of how to structure a hapi js REST Api project into models, routes, controllers and services for effective separation of concerns and unit testing.",
+          "Example Project of 'Hapi Js' with typescript and much features. This is a example books REST api built with Hapi js, Typescript , in-memory Database (NeDB). It is an example of how to structure a hapi js REST Api project into models, routes, controllers and services for effective separation of concerns and unit testing.",
         contact: {
           name: 'Afif Abdillah Jusuf',
           url: 'https://afif.dev',
