@@ -14,6 +14,7 @@ export interface Book {
 }
 
 export interface CreateBook {
+  id: string;
   name: string;
   year: number;
   author: string;
@@ -40,4 +41,10 @@ export interface UpdateBook {
   reading: boolean;
   insertedAt?: string;
   updatedAt?: string;
+}
+
+export interface BookWhereInput {
+  name?: string | RegExp;
+  reading?: boolean;
+  finished?: boolean;
 }

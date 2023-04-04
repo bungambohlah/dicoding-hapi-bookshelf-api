@@ -1,32 +1,30 @@
 import * as Hapi from '@hapi/hapi';
 import appInstance from '../app';
-import { mocked } from 'ts-jest/utils';
-import { Book } from './book';
-import { BookService } from './bookService';
-import { nanoid } from 'nanoid';
+// import { Book } from './book';
+// import { nanoid } from 'nanoid';
 
 describe('tests for Book controller', () => {
   // set dependencies
   let server: Hapi.Server;
-  const newDate: string = new Date().toISOString();
+  // const newDate: string = new Date().toISOString();
 
   // Construct dummy test data
-  const testData: Book[] = [
-    {
-      id: nanoid(),
-      author: 'Author',
-      name: 'Name',
-      pageCount: 100,
-      publisher: 'Publisher',
-      reading: false,
-      readPage: 25,
-      summary: 'Summary',
-      year: 2010,
-      finished: false,
-      insertedAt: newDate,
-      updatedAt: newDate,
-    },
-  ];
+  // const testData: Book[] = [
+  //   {
+  //     id: nanoid(),
+  //     author: 'Author',
+  //     name: 'Name',
+  //     pageCount: 100,
+  //     publisher: 'Publisher',
+  //     reading: false,
+  //     readPage: 25,
+  //     summary: 'Summary',
+  //     year: 2010,
+  //     finished: false,
+  //     insertedAt: newDate,
+  //     updatedAt: newDate,
+  //   },
+  // ];
 
   // Mock service class
 
