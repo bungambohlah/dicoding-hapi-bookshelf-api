@@ -1,7 +1,7 @@
 import * as Hapi from '@hapi/hapi';
 import baseRoute from './baseRoute';
 import bookRoutes from './books/booksRoutes';
-import * as HapiSwagger from '../node_modules/hapi-swagger';
+import * as HapiSwagger from 'hapi-swagger';
 import * as Inert from '@hapi/inert';
 import * as Vision from '@hapi/vision';
 
@@ -32,13 +32,10 @@ class App {
       },
     };
 
-    const swaggerPlugins: Array<Hapi.ServerRegisterPluginObject<any>> = [
-      {
-        plugin: Inert,
-      },
-      {
-        plugin: Vision,
-      },
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const swaggerPlugins: Array<any> = [
+      Inert,
+      Vision,
       {
         plugin: HapiSwagger,
         options: swaggerOptions,
