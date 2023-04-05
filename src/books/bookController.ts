@@ -85,7 +85,7 @@ export class BookController {
     h: Hapi.ResponseToolkit,
   ): Promise<Hapi.ResponseObject | Boom.Boom<unknown>> {
     try {
-      const params: Hapi.Util.Dictionary<string> = request.params;
+      const params: Hapi.Utils.Dictionary<string> = request.params;
       if (isEmpty(params.id)) {
         return h
           .response({ status: 'fail', message: 'BookId is empty' })
@@ -116,7 +116,7 @@ export class BookController {
     h: Hapi.ResponseToolkit,
   ): Promise<Hapi.ResponseObject | Boom.Boom<unknown>> {
     try {
-      const params: Hapi.Util.Dictionary<string> = request.params;
+      const params: Hapi.Utils.Dictionary<string> = request.params;
       const requestBody: UpdateBook = request.payload as UpdateBook;
 
       if (isEmpty(params.id)) {
@@ -171,7 +171,7 @@ export class BookController {
     h: Hapi.ResponseToolkit,
   ): Promise<Hapi.ResponseObject | Boom.Boom<unknown>> {
     try {
-      const params: Hapi.Util.Dictionary<string> = request.params;
+      const params: Hapi.Utils.Dictionary<string> = request.params;
       if (isEmpty(params.id)) {
         return h
           .response({
